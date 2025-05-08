@@ -1,3 +1,5 @@
+// src/pages/ServicesPage.js
+
 import React from "react";
 import { Link } from "react-router-dom";
 import Accordion from "../components/Accordion";
@@ -41,24 +43,34 @@ const services = [
 const ServicesPage = () => {
   return (
     <div className="services-page" style={{ padding: "2rem" }}>
-      <h1>Our Core Services</h1>
-      <p style={{ maxWidth: "700px", marginBottom: "2rem" }}>
+      <h1 className="services-page__title">Our Core Services</h1>
+      <p className="services-page_paragraph">
         At Consult Park, we simplify your journey to global talent by offering
         strategic outsourcing services across multiple verticals.
       </p>
 
       {/* Optional image section */}
       <img
-        src="https://via.placeholder.com/900x300"
+        src="..\assets\Consult-Park-Logo.png"
         alt="Remote services illustration"
-        style={{ width: "100%", marginBottom: "2rem", borderRadius: "8px" }}
+        style={{
+          width: "100%",
+          marginBottom: "2rem",
+          borderRadius: "8px",
+        }}
       />
 
-      <div>
+      <div className="services-page__accordion">
         {services.map((service, index) => (
-          <Accordion key={index} title={service.title} content={service.description} />
+          <Accordion
+            key={index}
+            title={service.title}
+            content={service.description}
+          />
         ))}
       </div>
+
+      {/* Bottom Contact Section */}
       <section className="services__bottom-cta">
         <h2>Ready to power your growth?</h2>
         <Link to="/contact" className="services__bottom-cta-button">
@@ -66,7 +78,6 @@ const ServicesPage = () => {
         </Link>
       </section>
     </div>
-    
   );
 };
 
