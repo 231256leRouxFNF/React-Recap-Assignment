@@ -1,0 +1,39 @@
+:root {
+    /* reuse the same palette from HomePage */
+    --color-green: #0cca62;
+    --color-teal:  #092d35;
+    --color-grey:  #7c8587;
+    --font-sans:   'Roboto', sans-serif;
+  }
+  
+  .aboutpage {
+    padding: 3rem 1.5rem;
+    font-family: var(--font-sans);
+    color: var(--color-teal);
+  }
+  
+  .aboutpage__section {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    text-align: center;
+  }
+  
+  .aboutpage__section h1,
+  .aboutpage__section h2 {
+    margin-bottom: 1rem;
+    color: var(--color-teal);
+  }
+  
+  .aboutpage__section p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--color-grey);
+  }
+  
+  .aboutpage__values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
