@@ -25,7 +25,20 @@ const services = [
 ];
 
 const ServicesPage = () => {
+  return (
+    <div className="services-page" style={{ padding: "2rem" }}>
+      <h1>Our Services</h1>
+      <p style={{ maxWidth: "600px", marginBottom: "2rem" }}>
+        Explore our core service categories designed to help you scale your team and grow your business remotely.
+      </p>
 
+      <div className="accordion-wrapper">
+        {services.map((service, index) => (
+          <Accordion key={index} title={service.title} content={service.description} />
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default ServicesPage;
