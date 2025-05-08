@@ -1,62 +1,103 @@
+/* src/pages/HomePage.css */
+
 :root {
-    /* pulled from your logos */
-    --color-green: #0cca62;
-    --color-teal:  #092d35;
-    --color-grey:  #7c8587;
-    --font-sans:  'Roboto', sans-serif;
+    --color-green:     #0cca62;
+    --color-teal:      #092d35;
+    --color-grey:      #7c8587;
+    --color-offwhite:  #f4f4f4;
+    --color-white:     #ffffff;
+    --font-sans:       'Roboto', sans-serif;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-offwhite);
   }
   
   .homepage {
-    padding: 3rem 1.5rem;
     font-family: var(--font-sans);
-    color: var(--color-teal);
   }
   
+  /* --- Hero (100vh) --- */
   .homepage__hero {
-    max-width: 800px;
-    margin: 0 auto 4rem;
-    text-align: center;
+    height: 76vh;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 2.5rem;              /* move title closer to top */
   }
   
-  .homepage__title {
-    font-size: 2.75rem;
-    margin-bottom: 0.5rem;
+  .homepage__hero-content {
+    max-width: 600px;
+    margin-left: 5vw;
+  }
+  
+  .hero-title {
+    font-size: 5.5rem;                 /* large heading */
+    line-height: 1.1;
+    margin: 0;
     color: var(--color-teal);
   }
   
-  .homepage__subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    color: var(--color-green);
+  .hero-title span {
+    display: block;
   }
   
-  .homepage__copy {
-    font-size: 1.125rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
+  .hero-title__highlight {
+    color: var(--color-green);
+    font-weight: 700;
+  }
+  
+  .hero-subtitle {
+    margin-top: 1rem;
+    font-size: 2rem;
     color: var(--color-grey);
   }
   
-  .homepage__cta {
-    display: inline-block;
-    background-color: var(--color-green);
-    color: #fff;
-    padding: 0.75rem 1.75rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
+  .hero-copy {
+    margin-top: 1.5rem;
+    font-size: 1.125rem;
+    color: var(--color-grey);
+    line-height: 1.6;
   }
   
-  .homepage__cta:hover {
-    background-color: var(--color-teal);
-  }
-  
+  /* --- Features Grid --- */
   .homepage__features {
+    padding: 4rem 3vw;
+    background-color: var(--color-white);
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
   }
+  
+  /* --- Bottom Full-Width CTA --- */
+  .homepage__bottom-cta {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    text-align: center;
+    padding: 4rem 5vw;
+  }
+  
+  .homepage__bottom-cta h2 {
+    margin: 0 0 1.5rem;
+    font-size: 2.25rem;
+    line-height: 1.2;
+  }
+  
+  .homepage__bottom-cta-button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: var(--color-white);
+    color: var(--color-green);
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .homepage__bottom-cta-button:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+
   

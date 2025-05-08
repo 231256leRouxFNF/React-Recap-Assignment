@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+:root {
+  --color-offwhite: #f4f4f4;
+  --color-white:    #ffffff;
+}
+
+/* make sure the root elements fill the viewport */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--color-offwhite);
+}
+
+.page-container {
+  /* 1rem side-gutters, full viewport height, centered */
+  width: calc(100% - 2rem);
+  max-width: 1200px;           /* span full height */
+  margin: 0 auto;           /* no top/bottom margin */
+  background-color: var(--color-white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  /* this area scrolls if content overflows */
+  padding: 2rem;
+}
