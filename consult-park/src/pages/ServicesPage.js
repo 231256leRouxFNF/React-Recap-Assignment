@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Accordion from "../components/Accordion";
+import "./ServicesPage.css";
 
 const services = [
   {
@@ -57,27 +59,14 @@ const ServicesPage = () => {
           <Accordion key={index} title={service.title} content={service.description} />
         ))}
       </div>
-
-      {/* Call to action */}
-      <div style={{ marginTop: "3rem", textAlign: "center" }}>
-        <h3>Ready to elevate your business?</h3>
-        <p>Let’s talk about how our services can align with your goals.</p>
-        <a
-          href="/contact"
-          style={{
-            display: "inline-block",
-            marginTop: "1rem",
-            padding: "0.75rem 1.5rem",
-            backgroundColor: "#003366",
-            color: "white",
-            borderRadius: "6px",
-            textDecoration: "none"
-          }}
-        >
+      <section className="services__bottom-cta">
+        <h2>Ready to power your growth?</h2>
+        <Link to="/contact" className="services__bottom-cta-button">
           Contact Us
-        </a>
-      </div>
+        </Link>
+      </section>
     </div>
+    
   );
 };
 
