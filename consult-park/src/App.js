@@ -8,6 +8,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";
 import BPOPage from "./pages/BPOPage";
+import ContactPage from "./pages/ContactPage";
 
 // You can add HomePage, AboutPage, ContactPage etc.
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/bpo" element={<BPOPage />} />
+          <Route path="/contact" element={<ContactPage />} />
           {/* Other routes here */}
         </Routes>
       </div>
