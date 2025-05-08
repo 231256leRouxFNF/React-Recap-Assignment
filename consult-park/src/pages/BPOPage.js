@@ -1,5 +1,3 @@
-// src/pages/BPOPage.jsx
-
 import React from "react";
 import ServiceCard from "../components/ServiceCard";
 
