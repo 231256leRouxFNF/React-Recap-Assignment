@@ -4,12 +4,6 @@ A modern, responsive React-based website simulating a business outsourcing servi
 
 ---
 
-## 🚀 Live Preview
-
-🌐 _[Optional if deployed – insert Netlify/Vercel link here]_
-
----
-
 ## 🎥 Demo Video
 
 [Watch the demo video](https://drive.google.com/file/d/1_5or58sBjyvOGyzlYt-3Tt1hLqQOUaIL/view?usp=sharing)
