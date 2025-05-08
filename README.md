@@ -10,6 +10,12 @@ A modern, responsive React-based website simulating a business outsourcing servi
 
 ---
 
+## 🎥 Demo Video
+
+[Watch the demo video](https://drive.google.com/file/d/1_5or58sBjyvOGyzlYt-3Tt1hLqQOUaIL/view?usp=sharing)
+
+---
+
 ## 🧑‍💻 Group Members
 
 - **231256 le Roux** – Services Page & BPO Page
@@ -32,15 +38,15 @@ A modern, responsive React-based website simulating a business outsourcing servi
 
 src/
 ├── components/ # Reusable UI components
-│ ├── Navbar.jsx
-│ ├── Footer.jsx
+│ ├── Navbar.js
+│ ├── Footer.js
 │ └── ...
 ├── pages/ # Route pages
-│ ├── HomePage.jsx
-│ ├── ServicesPage.jsx
-│ ├── BPOPage.jsx
-│ ├── AboutPage.jsx
-│ └── ContactPage.jsx
+│ ├── HomePage.js
+│ ├── ServicesPage.js
+│ ├── BPOPage.js
+│ ├── AboutPage.js
+│ └── ContactPage.js
 ├── styles/ # CSS Module files
 │ ├── Services.module.css
 │ ├── BPO.module.css
