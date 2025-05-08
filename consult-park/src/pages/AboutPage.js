@@ -1,12 +1,15 @@
+// src/pages/AboutPage.js
+
 import React from 'react';
+import { FaLightbulb, FaHandshake, FaRocket, FaGlobe } from 'react-icons/fa';
 import ValueCard from '../components/ValueCard';
 import './AboutPage.css';
 
 const values = [
-  { icon: '💡', title: 'Excellence' },
-  { icon: '🤝', title: 'Integrity' },
-  { icon: '🚀', title: 'Innovation' },
-  { icon: '🌍', title: 'Global Reach' },
+  { Icon: FaLightbulb, title: 'Excellence' },
+  { Icon: FaHandshake,  title: 'Integrity'   },
+  { Icon: FaRocket,     title: 'Innovation'  },
+  { Icon: FaGlobe,      title: 'Global Reach'},
 ];
 
 export default function AboutPage() {
@@ -37,8 +40,8 @@ export default function AboutPage() {
       <section className="aboutpage__section aboutpage__values">
         <h2>Our Values</h2>
         <div className="aboutpage__values-grid">
-          {values.map(({ icon, title }) => (
-            <ValueCard key={title} icon={icon} title={title} />
+          {values.map(({ Icon, title }) => (
+            <ValueCard key={title} Icon={Icon} title={title} />
           ))}
         </div>
       </section>
